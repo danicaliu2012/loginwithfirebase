@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="js/function.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<title>Danicacademy</title>
+</head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<a href="danicacademy.html"><div class="top"><span><img src="image/logo.png" class="img-logo"></span><span><span id="Danica">Danica</span><span id="cademy">cademy</span></span></div></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+   
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li></li>
+ 
+ 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+      		<form class="form-inline">
+	      		<div class="form-group">
+	      			<p>
+	      			<span>Welcome</span>
+	      			<span id="email-t">	
+	      			<script>
+	      				document.write(localStorage.getItem("email"))
+	      			</script></span>
+	      			<span>!</span>
+					</p>
+
+					<button id="opener-logout" type="submit" class="btn btn-primary">Log Out</button>
+
+							  
+			 	</div>
+		  	</div>
+
+      	</li>
+     
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+	
+		<div class="row">
+			<div class="container-fluid big-img">
+				<div class="container">
+					<div class="col-xs-1 col-sm-1 col-md-3 col-lg-4">
+						
+					</div> 
+					<div class="col-xs-10 col-sm-10 col-md-6 col-lg-4 bg">
+						<div class="column-logo">
+						<img src="image/logo-andriod.png" alt="">
+						<img src="image/logo-apple.png" alt="">
+						<img src="image/logo-c.png" alt="">
+						</div>
+						<p>Learn Android, iOS and C</p>
+					</div>
+
+				
+				</div>
+				
+			</div>
+		</div>
+
+	
+</body>
+<footer class="pull-right">Copyright(c)MoQu2014.All Rights Rederved.</footer>
+</html>

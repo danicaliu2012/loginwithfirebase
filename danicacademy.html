@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="js/function.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<title>Danicacademy</title>
+</head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<div class="top"><span><img src="image/logo.png" class="img-logo"></span><span><span id="Danica">Danica</span><span id="cademy">cademy</span></span></div>
+
+      <button type="button" id="toggle-bar" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      	
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+                           
+      </button>
+   
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li></li>
+ 
+ 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+
+
+      	<!-- Login Form -->
+      		<form class="form-inline">
+	      		<div class="form-group signup-form">
+	      			<!-- get the email that already in the database -->
+					<input type="text" name="email" id="login-email" class="form-control text ui-widget-content ui-corner-all login-form-margin" placeholder="Email"/>
+					
+					<!-- get the password that match the email in the databse -->
+					<input type="password" name="password" id="login-password" class="form-control text ui-widget-content ui-corner-all login-form-margin" placeholder="Password"/>
+
+					<!-- post the request to the database to see if email and password match -->
+
+					<button id="opener-login" type="submit"class="btn btn-primary">Log In</button>
+
+					
+			  
+			 	</div>
+		  	</div>
+
+      	</li>
+     
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+	
+		<div class="row">
+			<div class="container-fluid big-img">
+				<div class="container">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 bg">
+						<div class="column-logo">
+						<img src="image/logo-andriod.png" alt="">
+						<img src="image/logo-apple.png" alt="">
+						<img src="image/logo-c.png" alt="">
+						</div>
+					
+						<p>Learn Android, iOS and C</p>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 info">
+						<div class="form-group">
+					<!-- get the user name -->
+		   				<input type="text" class="form-control signup-form" id="register-name" placeholder="User Name">
+
+		   			<!-- get the user eamil -->
+
+		   				<input type="text" name="email"id="register-email" class="form-control text ui-widget-content ui-corner-all signup-form" placeholder="Email Address"/>
+
+		   			<!-- get the user password -->
+
+		   				<input type="password" name="password" id="register-password" class="form-control text ui-widget-content ui-corner-all signup-form" placeholder="Password"/>
+
+		   			<!-- auth new user to the database -->
+
+		   				
+		   				<div class="btn-primary2">
+		   				<button id="opener-register"type="submit" class="btn signup-form">Free Join</button>
+						</div>
+		   				</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	
+</body>
+<div class="footer-container">
+<footer >Copyright(c)MoQu2014.All Rights Rederved.</footer>
+</div>
+
+</html>
